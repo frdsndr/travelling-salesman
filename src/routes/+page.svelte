@@ -1,5 +1,5 @@
 <script>
-	
+	import Travel from '$lib/components/Travel/Travel.svelte'
 </script>
 
 <svelte:head>
@@ -11,6 +11,10 @@
 	<h1>A Travelling Salesman</h1>
 	<h2>A Svelte, SvelteKit and Threlte (Three.js) demo project.</h2>
 </section>
+
+<article>
+	<Travel />
+</article>
 
 <style>
 	section {
