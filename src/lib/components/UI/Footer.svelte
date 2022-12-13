@@ -1,5 +1,4 @@
 <script>
-	
 </script>
 
 <footer>
@@ -8,6 +7,8 @@
 
 <style>
 	footer {
+		position: fixed;
+		bottom: 0;
 		display: flex;
 		flex-direction: column;
 		justify-content: center;
