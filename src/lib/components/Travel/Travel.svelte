@@ -46,7 +46,7 @@
 
 		<!-- utilities -->
 		<Helpers />
-		<Background color={'#50aee3'} />
+		<Background color={'#739368'} />
 		<ShadowPlane />
 	</Canvas>
 </div>
