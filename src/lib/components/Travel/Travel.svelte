@@ -5,8 +5,7 @@
 	import Ortho from './cameras/Ortho.svelte';
 
 	// geometry
-	import Cube from '$lib/components/Travel/models/Cube.svelte';
-	import Floor from '$lib/components/Travel/models/Floor.svelte';
+	import Cube from '$lib/components/Travel/utils/Cube.svelte';
 	import TreeSquare from '$lib/components/Travel/models/TreeSquare.svelte';
 	import BushSquare from '$lib/components/Travel/models/BushSquare.svelte';
 	import House from './models/House.svelte';
@@ -18,6 +17,7 @@
 	// utilities
 	import Helpers from '$lib/components/Travel/utils/Helpers.svelte';
 	import Background from '$lib/components/Travel/utils/Background.svelte';
+	import ShadowPlane from './utils/ShadowPlane.svelte';
 </script>
 
 <div>
@@ -29,7 +29,6 @@
 		<Lights />
 
 		<!-- geometry -->
-		<Floor />
 		<Cube />
 		<House position={{ x: 8, y: 0, z: -4 }} />
 		<Salesman position={{ x: -8, y: 0, z: -4 }} />
@@ -45,6 +44,7 @@
 		<!-- utilities -->
 		<Helpers />
 		<Background color={'#50aee3'} />
+		<ShadowPlane />
 	</Canvas>
 </div>
 
@@ -52,6 +52,6 @@
 	div {
 		height: 100%;
 		width: 100%;
-		min-height: 500px;
+		min-height: 90vh;
 	}
 </style>
