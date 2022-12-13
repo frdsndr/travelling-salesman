@@ -5,6 +5,8 @@
 
 	import Cube from '$lib/components/Travel/models/Cube.svelte';
 	import Floor from '$lib/components/Travel/models/Floor.svelte';
+	// lighting
+	import Lights from '$lib/components/Travel/lighting/Lights.svelte';
 </script>
 
 <div>
@@ -12,8 +14,8 @@
 		<!-- cameras -->
 		<Persp />
 
-		<T.DirectionalLight castShadow position={[3, 10, 10]} />
-		<T.AmbientLight intensity={0.2} />
+		<!-- lighting -->
+		<Lights />
 
 		<!-- Geometry -->
 		<Floor />
