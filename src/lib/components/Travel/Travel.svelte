@@ -18,7 +18,7 @@
 </script>
 
 <div>
-	<Canvas>
+	<Canvas rendererParameters={{ antialias: true }}>
 		<!-- cameras -->
 		<Persp />
 
