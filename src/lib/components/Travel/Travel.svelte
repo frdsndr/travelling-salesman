@@ -2,7 +2,7 @@
 	import { Canvas } from '@threlte/core';
 
 	// cameras
-	import Persp from './cameras/Persp.svelte';
+	import Ortho from './cameras/Ortho.svelte';
 
 	// geometry
 	import Cube from '$lib/components/Travel/models/Cube.svelte';
@@ -20,7 +20,7 @@
 <div>
 	<Canvas rendererParameters={{ antialias: true }}>
 		<!-- cameras -->
-		<Persp />
+		<Ortho />
 
 		<!-- lighting -->
 		<Lights />
