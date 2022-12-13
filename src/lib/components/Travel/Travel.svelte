@@ -10,6 +10,7 @@
 	import BushSquare from '$lib/components/Travel/models/BushSquare.svelte';
 	import House from './models/House.svelte';
 	import Salesman from './models/Salesman.svelte';
+	import Street from './models/Street.svelte';
 
 	// lighting
 	import Lights from '$lib/components/Travel/lighting/Lights.svelte';
@@ -40,6 +41,8 @@
 		<BushSquare variant="l1" position={{ x: 4, y: 0, z: 7 }} />
 		<BushSquare variant="s1" position={{ x: 6, y: 0, z: -4 }} />
 		<BushSquare variant="s2" position={{ x: 8, y: 0, z: -4 }} />
+
+		<Street />
 
 		<!-- utilities -->
 		<Helpers />
