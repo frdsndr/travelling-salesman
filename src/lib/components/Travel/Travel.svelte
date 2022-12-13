@@ -15,6 +15,7 @@
 
 	// utilities
 	import Helpers from '$lib/components/Travel/utils/Helpers.svelte';
+	import Background from '$lib/components/Travel/utils/Background.svelte';
 </script>
 
 <div>
@@ -39,6 +40,7 @@
 
 		<!-- utilities -->
 		<Helpers />
+		<Background color={'white'} />
 	</Canvas>
 </div>
 
