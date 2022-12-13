@@ -9,6 +9,8 @@
 	import Floor from '$lib/components/Travel/models/Floor.svelte';
 	import TreeSquare from '$lib/components/Travel/models/TreeSquare.svelte';
 	import BushSquare from '$lib/components/Travel/models/BushSquare.svelte';
+	import House from './models/House.svelte';
+	import Salesman from './models/Salesman.svelte';
 
 	// lighting
 	import Lights from '$lib/components/Travel/lighting/Lights.svelte';
@@ -29,6 +31,8 @@
 		<!-- geometry -->
 		<Floor />
 		<Cube />
+		<House position={{ x: 8, y: 0, z: -4 }} />
+		<Salesman position={{ x: -8, y: 0, z: -4 }} />
 
 		<TreeSquare variant="l1" position={{ x: 2, y: 0, z: 0 }} />
 		<TreeSquare variant="s1" position={{ x: -4, y: 0, z: 4 }} />
