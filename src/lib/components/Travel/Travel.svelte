@@ -40,7 +40,7 @@
 
 		<!-- utilities -->
 		<Helpers />
-		<Background color={'white'} />
+		<Background color={'#50aee3'} />
 	</Canvas>
 </div>
 
