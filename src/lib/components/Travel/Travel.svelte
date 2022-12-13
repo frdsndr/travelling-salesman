@@ -7,6 +7,9 @@
 	import Floor from '$lib/components/Travel/models/Floor.svelte';
 	// lighting
 	import Lights from '$lib/components/Travel/lighting/Lights.svelte';
+
+	// utilities
+	import Helpers from '$lib/components/Travel/utils/Helpers.svelte';
 </script>
 
 <div>
@@ -20,6 +23,9 @@
 		<!-- Geometry -->
 		<Floor />
 		<Cube />
+
+		<!-- utilities -->
+		<Helpers />
 	</Canvas>
 </div>
 
