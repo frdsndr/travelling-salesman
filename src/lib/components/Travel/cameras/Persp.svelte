@@ -6,15 +6,17 @@
 		makeDefault: true,
 		position: [30, 30, 30],
 		fov: 55
+		// near: 0.1,
+		// far: 100000
 	};
 
-    const orbit = {
-        maxPolarAngle: degToRad(80),
-        enableZoom: true,
-        target: { y: 0 } 
-    }
+	const orbit = {
+		maxPolarAngle: degToRad(80),
+		enableZoom: true,
+		target: { y: 0 }
+	};
 </script>
 
 <T.PerspectiveCamera {...persp}>
-	<OrbitControls {...orbit}/>
+	<OrbitControls {...orbit} />
 </T.PerspectiveCamera>

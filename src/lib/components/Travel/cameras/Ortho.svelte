@@ -4,12 +4,14 @@
 
 	const ortho = {
 		makeDefault: true,
-		position: [10, 10, 10],
+		position: [100, 100, 100],
 		zoom: 20
+		// near: 0.1,
+		// far: 100000
 	};
 
 	const orbit = {
-		maxPolarAngle: degToRad(80),
+		maxPolarAngle: degToRad(85),
 		enableZoom: true,
 		target: { x: 0, y: 0, z: 0 }
 	};
