@@ -1,10 +1,14 @@
 <script>
-	import { Canvas, OrbitControls, T } from '@threlte/core';
+	import { Canvas } from '@threlte/core';
 
+	// cameras
 	import Persp from './cameras/Persp.svelte';
 
+	// geometry
 	import Cube from '$lib/components/Travel/models/Cube.svelte';
 	import Floor from '$lib/components/Travel/models/Floor.svelte';
+	import Tree from '$lib/components/Travel/models/trees/TreeLarge.svelte';
+
 	// lighting
 	import Lights from '$lib/components/Travel/lighting/Lights.svelte';
 
@@ -20,9 +24,10 @@
 		<!-- lighting -->
 		<Lights />
 
-		<!-- Geometry -->
+		<!-- geometry -->
 		<Floor />
 		<Cube />
+		<Tree />
 
 		<!-- utilities -->
 		<Helpers />
