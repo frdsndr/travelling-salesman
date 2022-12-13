@@ -33,6 +33,6 @@
 />
 <T.AmbientLight
 	{...{
-		intensity: 0.3
+		intensity: 0.5
 	}}
 />
