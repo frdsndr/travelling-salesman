@@ -13,7 +13,8 @@
 	const orbit = {
 		maxPolarAngle: degToRad(85),
 		enableZoom: true,
-		target: { x: 0, y: 0, z: 0 }
+		target: { x: 0, y: 0, z: 0 },
+		autoRotate: true
 	};
 </script>
 
