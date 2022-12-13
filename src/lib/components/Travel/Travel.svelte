@@ -7,7 +7,7 @@
 	// geometry
 	import Cube from '$lib/components/Travel/models/Cube.svelte';
 	import Floor from '$lib/components/Travel/models/Floor.svelte';
-	import Tree from '$lib/components/Travel/models/trees/TreeLarge.svelte';
+	import TreeSquare from '$lib/components/Travel/models/TreeSquare.svelte';
 	import BushSquare from '$lib/components/Travel/models/BushSquare.svelte';
 
 	// lighting
@@ -28,7 +28,9 @@
 		<!-- geometry -->
 		<Floor />
 		<Cube />
-		<Tree />
+		<TreeSquare variant={0} position={{ x: 2, y: 0, z: 0 }} />
+		<TreeSquare variant={1} position={{ x: -4, y: 0, z: 4 }} />
+		<TreeSquare variant={2} position={{ x: 7, y: 0, z: 7 }} />
 		<BushSquare size="large" variant={0} position={{ x: 4, y: 0, z: 7 }} />
 		<BushSquare size="small" variant={0} position={{ x: 3, y: 0, z: 8 }} />
 		<BushSquare size="small" variant={1} position={{ x: 8, y: 0, z: 3 }} />
