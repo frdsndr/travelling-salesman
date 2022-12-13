@@ -30,16 +30,16 @@
 
 		<!-- geometry -->
 		<Cube />
-		<House position={{ x: 8, y: 0, z: -4 }} />
-		<Salesman position={{ x: -8, y: 0, z: -4 }} />
+		<House position={{ x: 8, y: 0, z: -6 }} />
+		<Salesman position={{ x: -8, y: 0, z: 0 }} />
 
-		<TreeSquare variant="l1" position={{ x: 2, y: 0, z: 0 }} />
-		<TreeSquare variant="s1" position={{ x: -4, y: 0, z: 4 }} />
-		<TreeSquare variant="s2" position={{ x: 7, y: 0, z: 7 }} />
+		<TreeSquare variant="l1" position={{ x: 2, y: 0, z: -7 }} />
+		<TreeSquare variant="s1" position={{ x: -4, y: 0, z: -4 }} />
+		<TreeSquare variant="s2" position={{ x: 12, y: 0, z: -9 }} />
 
 		<BushSquare variant="l1" position={{ x: 4, y: 0, z: 7 }} />
-		<BushSquare variant="s1" position={{ x: 3, y: 0, z: 8 }} />
-		<BushSquare variant="s2" position={{ x: 8, y: 0, z: 3 }} />
+		<BushSquare variant="s1" position={{ x: 6, y: 0, z: -4 }} />
+		<BushSquare variant="s2" position={{ x: 8, y: 0, z: -4 }} />
 
 		<!-- utilities -->
 		<Helpers />
