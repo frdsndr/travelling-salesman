@@ -1,28 +1,28 @@
 <script>
+	import iconTwitter from '$lib/images/icons/icon-twitter.svg';
+	import iconInstagram from '$lib/images/icons/icon-instagram.svg';
 </script>
 
 <footer>
-	<p>visit <a href="https://kit.svelte.dev">kit.svelte.dev</a> to learn SvelteKit</p>
+	<img src={iconTwitter} alt="Twitter" />
+	<img src={iconInstagram} alt="Instagram" />
 </footer>
 
 <style>
 	footer {
 		position: fixed;
 		bottom: 0;
+		right: 0;
+		width: 100%;
 		display: flex;
-		flex-direction: column;
-		justify-content: center;
+		flex-direction: row;
+		justify-content: flex-end;
 		align-items: center;
-		padding: 12px;
-	}
-
-	footer a {
-		font-weight: bold;
+		gap: 0.5rem;
+		padding: 1rem;
+		z-index: 100;
 	}
 
 	@media (min-width: 480px) {
-		footer {
-			padding: 12px 0;
-		}
 	}
 </style>
