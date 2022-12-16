@@ -23,7 +23,9 @@
 	}
 
 	main {
+		display: flex;
 		width: 100%;
 		box-sizing: border-box;
+		flex: 1;
 	}
 </style>
