@@ -1,5 +1,8 @@
 <script>
 	import Travel from '$lib/components/Travel/Travel.svelte';
+	import Button from '$lib/components/UI/Button.svelte';
+
+	import iconMouse from '$lib/images/icons/icon-mouse.svg';
 </script>
 
 <svelte:head>
@@ -9,8 +12,9 @@
 
 <div>
 	<section>
-		<h1>A Travelling Salesman</h1>
-		<h2>A Svelte, SvelteKit and Threlte (Three.js) demo project.</h2>
+		<h1>The Travelling Salesman</h1>
+		<h2>A fun little GFX project created with Svelte/SvelteKit and Threlte/Three.js</h2>
+		<Button label="Scroll down" icon={iconMouse} />
 	</section>
 
 	<div class="canvas-wrapper">
