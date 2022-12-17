@@ -1,5 +1,5 @@
 <script>
-	import { Canvas } from '@threlte/core';
+	import { Canvas, T } from '@threlte/core';
 
 	// cameras
 	import Ortho from './cameras/Ortho.svelte';
@@ -19,6 +19,9 @@
 	import Helpers from '$lib/components/Travel/utils/Helpers.svelte';
 	import Background from '$lib/components/Travel/utils/Background.svelte';
 	import ShadowPlane from './utils/ShadowPlane.svelte';
+
+	// tweened stores
+	import { positionSalesman } from '$lib/stores/store';
 </script>
 
 <div>
@@ -32,7 +35,9 @@
 		<!-- geometry -->
 		<Cube />
 		<House position={{ x: 8, y: 0, z: -6 }} />
-		<Salesman position={{ x: -8, y: 0, z: 0 }} />
+		<T.Group position.x={$positionSalesman}>
+			<Salesman />
+		</T.Group>
 
 		<TreeSquare variant="l1" position={{ x: 2, y: 0, z: -7 }} />
 		<TreeSquare variant="s1" position={{ x: -4, y: 0, z: -4 }} />
