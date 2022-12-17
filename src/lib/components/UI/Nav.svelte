@@ -93,6 +93,10 @@
 		font-weight: 700;
 	}
 
+	nav > h1 {
+		border-bottom: 0.25rem solid var(--color-orange);
+	}
+
 	ul {
 		padding: 0;
 		margin: 0;
