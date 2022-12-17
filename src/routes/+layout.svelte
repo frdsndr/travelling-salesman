@@ -24,6 +24,7 @@
 
 	main {
 		display: flex;
+		flex-direction: column;
 		width: 100%;
 		box-sizing: border-box;
 		flex: 1;

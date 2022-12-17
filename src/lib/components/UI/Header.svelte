@@ -14,9 +14,12 @@
 
 <style>
 	header {
+		position: fixed;
+		top: 0;
+		right: 0;
 		display: flex;
 		justify-content: flex-end;
-		z-index: 100;
+		z-index: 999;
 	}
 
 	button {
