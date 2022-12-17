@@ -9,7 +9,7 @@
 
 <header>
 	<button on:click={handleClick}><img src={iconBurger} alt="Burger" /></button>
-	<Nav {showMenu} />
+	<Nav {showMenu} on:click={handleClick} />
 </header>
 
 <style>
@@ -20,6 +20,7 @@
 		display: flex;
 		justify-content: flex-end;
 		z-index: 999;
+		padding: 1rem;
 	}
 
 	button {
