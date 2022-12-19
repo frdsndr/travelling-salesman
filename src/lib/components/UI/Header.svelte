@@ -9,6 +9,14 @@
 
 	// import stores
 	import { start, sales, positionSalesman, currentHouse, finish } from '$lib/stores/store';
+
+	const restartHandle = () => {
+		start.set(false);
+		finish.set(false);
+		sales.set(0);
+		positionSalesman.set(-14);
+		currentHouse.set(0);
+	};
 </script>
 
 <header>
