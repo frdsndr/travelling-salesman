@@ -2,6 +2,8 @@
 	import { T, OrbitControls } from '@threlte/core';
 	import { degToRad } from 'three/src/math/MathUtils';
 
+	import { targetCamera } from '$lib/stores/store';
+
 	const ortho = {
 		makeDefault: true,
 		position: [100, 100, 100],
@@ -11,13 +13,16 @@
 	};
 
 	const orbit = {
+		enableDamping: true,
 		maxPolarAngle: degToRad(85),
-		enableZoom: true,
-		target: { x: 0, y: 0, z: 0 },
-		autoRotate: true
+		// maxAzimuthAngle: degToRad(85),
+		enableZoom: true
+		// target: { x: 0, y: 0, z: 0 }
+		// autoRotate: true,
+		// autoRotateSpeed: 0.2
 	};
 </script>
 
 <T.OrthographicCamera {...ortho}>
-	<OrbitControls {...orbit} />
+	<OrbitControls {...orbit} target={{ x: $targetCamera, y: 0, z: 0 }} />
 </T.OrthographicCamera>
