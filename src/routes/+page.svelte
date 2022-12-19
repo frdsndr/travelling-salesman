@@ -3,6 +3,10 @@
 
 	import Header from '$lib/components/sections/home/Header.svelte';
 	import House from '$lib/components/sections/home/House.svelte';
+	// stores
+	import { positionSalesman, sales } from '$lib/stores/store';
+	import { start, finish } from '$lib/stores/store';
+	import { houses, currentHouse } from '$lib/stores/store';
 </script>
 
 <svelte:head>
