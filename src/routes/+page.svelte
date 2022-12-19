@@ -20,8 +20,18 @@
 </svelte:head>
 
 <div class="page-wrapper">
-	<Header />
-	<House houseId={1} description="Seems like and old lady lives here. What will you try to sell?" />
+	{#if !$start}
+		<Header on:click={startHandler} />
+	{:else if $finish}
+		<Finish />
+	{:else}
+		<House
+			houseId={$houses[$currentHouse].id}
+			description={$houses[$currentHouse].question}
+			answers={$houses[$currentHouse].answers}
+			on:click={nextHouse}
+		/>
+	{/if}
 
 	<div class="canvas-wrapper">
 		<Travel />
