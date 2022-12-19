@@ -34,7 +34,9 @@
 
 		<!-- geometry -->
 		<Cube />
+		<House position={{ x: -8, y: 0, z: -6 }} />
 		<House position={{ x: 8, y: 0, z: -6 }} />
+		<House position={{ x: 16, y: 0, z: -6 }} />
 		<T.Group position.x={$positionSalesman}>
 			<Salesman />
 		</T.Group>
