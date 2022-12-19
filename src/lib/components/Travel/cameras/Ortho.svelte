@@ -4,8 +4,8 @@
 
 	const ortho = {
 		makeDefault: true,
-		position: [1000, 1000, 1000],
-		zoom: 20
+		position: [100, 100, 100],
+		zoom: 30
 		// near: 0.1,
 		// far: 100000
 	};
