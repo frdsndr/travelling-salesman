@@ -6,7 +6,7 @@
 	import Finish from '$lib/components/sections/home/Finish.svelte';
 
 	// stores
-	import { positionSalesman, targetCamera, camY } from '$lib/stores/store';
+	import { positionSalesman, targetCamera } from '$lib/stores/store';
 	import { start, finish } from '$lib/stores/store';
 	import { houses, currentHouse, sales } from '$lib/stores/store';
 
