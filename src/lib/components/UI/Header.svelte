@@ -12,7 +12,11 @@
 </script>
 
 <header>
-	<Score />
+	{#if $start}
+		<Sales on:click={restartHandle} sales={$sales} />
+	{:else}
+		<div class="empty-placeholder" />
+	{/if}
 	<button on:click={handleClick}><img src={iconBurger} alt="Burger" /></button>
 	<Nav {showMenu} on:click={handleClick} />
 </header>
