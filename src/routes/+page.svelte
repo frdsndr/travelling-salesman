@@ -9,6 +9,25 @@
 	import { positionSalesman, sales } from '$lib/stores/store';
 	import { start, finish } from '$lib/stores/store';
 	import { houses, currentHouse } from '$lib/stores/store';
+
+	const nextHouse = (e) => {
+		// update sales
+		const answerId = e.target.dataset.id;
+		sales.update((v) => v + $houses[$currentHouse].answers[answerId].amount);
+
+		// update house and position
+		if ($currentHouse < $houses.length - 1) {
+			currentHouse.update((v) => v + 1);
+			positionSalesman.set($houses[$currentHouse].salesManPosition);
+		} else if ($currentHouse === $houses.length - 1) {
+			positionSalesman.set(0);
+			finish.set(true);
+		}
+	};
+	const startHandler = () => {
+		positionSalesman.set($houses[$currentHouse].salesManPosition);
+		start.set(true);
+	};
 </script>
 
 <svelte:head>
