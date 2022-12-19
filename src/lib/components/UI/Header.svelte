@@ -1,6 +1,6 @@
 <script>
 	import Nav from '$lib/components/UI/Nav.svelte';
-	import Score from '$lib/components/UI/Score.svelte';
+	import Sales from '$lib/components/UI/Sales.svelte';
 
 	import iconBurger from '$lib/images/icons/icon-burger.svg';
 
