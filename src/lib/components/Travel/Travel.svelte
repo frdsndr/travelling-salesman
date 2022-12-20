@@ -1,4 +1,5 @@
 <script>
+	import { onMount } from 'svelte';
 	import { Canvas, T } from '@threlte/core';
 
 	// cameras
@@ -11,6 +12,7 @@
 	import House from './models/House.svelte';
 	import Salesman from './models/Salesman.svelte';
 	import Street from './models/Street.svelte';
+	import Car from './models/Car.svelte';
 
 	// lighting
 	import Lights from '$lib/components/Travel/lighting/Lights.svelte';
@@ -22,6 +24,11 @@
 
 	// tweened stores
 	import { positionSalesman } from '$lib/stores/store';
+	import { positionCar } from '$lib/stores/store';
+
+	onMount(()=> {
+		positionCar.set(-50)
+	})
 </script>
 
 <div>
@@ -41,6 +48,10 @@
 		<House position={{ x: 32, y: 0, z: -6 }} />
 		<T.Group position.x={$positionSalesman}>
 			<Salesman />
+		</T.Group>
+
+		<T.Group position.x={$positionCar}>
+			<Car />
 		</T.Group>
 
 		<TreeSquare variant="l1" position={{ x: 2, y: 0, z: -7 }} />
