@@ -6,20 +6,20 @@
 	import Ortho from './cameras/Ortho.svelte';
 
 	// geometry
-	import Cube from '$lib/components/Travel/utils/Cube.svelte';
-	import TreeSquare from '$lib/components/Travel/models/TreeSquare.svelte';
-	import BushSquare from '$lib/components/Travel/models/BushSquare.svelte';
+	import Cube from '$lib/components/Canvas/utils/Cube.svelte';
+	import TreeSquare from '$lib/components/Canvas/models/TreeSquare.svelte';
+	import BushSquare from '$lib/components/Canvas/models/BushSquare.svelte';
 	import House from './models/House.svelte';
 	import Salesman from './models/Salesman.svelte';
 	import Street from './models/Street.svelte';
 	import Car from './models/Car.svelte';
 
 	// lighting
-	import Lights from '$lib/components/Travel/lighting/Lights.svelte';
+	import Lights from '$lib/components/Canvas/lighting/Lights.svelte';
 
 	// utilities
 	// import Helpers from '$lib/components/Travel/utils/Helpers.svelte';
-	import Background from '$lib/components/Travel/utils/Background.svelte';
+	import Background from '$lib/components/Canvas/utils/Background.svelte';
 	import ShadowPlane from './utils/ShadowPlane.svelte';
 
 	// tweened stores
