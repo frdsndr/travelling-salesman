@@ -11,8 +11,16 @@
 <div class="nav-wrapper" class:showMenu>
 	<section class="buttons">
 		<div class="social-links">
-			<img src={iconTwitter} alt="Twitter" />
-			<img src={iconInstagram} alt="Instagram" />
+			<a href="https://twitter.com/PunctuationPics" target="_blank" rel="noreferrer noopener">
+				<img src={iconTwitter} alt="Twitter" />
+			</a>
+			<a
+				href="https://www.instagram.com/punctuationpictures/"
+				target="_blank"
+				rel="noreferrer noopener"
+			>
+				<img src={iconInstagram} alt="Instagram" />
+			</a>
 		</div>
 		<button on:click>
 			<img src={iconCross} alt="Cross" />
@@ -24,19 +32,39 @@
 			<li aria-current={$page.url.pathname === '/' ? 'page' : undefined}>
 				<a href="/">Home</a>
 			</li>
-			<li aria-current={$page.url.pathname === '/about' ? 'page' : undefined}>
-				<a href="/about">About</a>
+			<li>
+				<a
+					href="https://github.com/punctuationpictures/travelling-salesman"
+					target="_blank"
+					rel="noreferrer noopener"
+				>
+					Github repo
+				</a>
 			</li>
 			<li>
-				<a href="https://github.com">Github</a>
+				<a
+					href="https://www.figma.com/file/e1FyJbKmA5Fpa6sFotf0g9/PUNCTUATION_PICTURES_travelling_salesman"
+					target="_blank"
+					rel="noreferrer noopener"
+				>
+					Figma project
+				</a>
 			</li>
 		</ul>
 	</nav>
 	<section>
-		<h1>Created by:</h1>
+		<h1 created>Created by:</h1>
 		<ul>
-			<li>Kaboom Shebang</li>
-			<li>Punctuation Pictures</li>
+			<li url>
+				<a href="https://www.kaboomshebang.com" target="_blank" rel="noreferrer noopener"
+					>Kaboom Shebang</a
+				>
+			</li>
+			<li url>
+				<a href="https://punctuation.pictures" target="_blank" rel="noreferrer noopener"
+					>Punctuation Pictures</a
+				>
+			</li>
 		</ul>
 	</section>
 </div>
@@ -72,7 +100,7 @@
 		gap: 0.5rem;
 	}
 
-	.social-links > img {
+	.social-links > a > img {
 		height: 1.25rem;
 	}
 
@@ -93,6 +121,10 @@
 		font-weight: 700;
 	}
 
+	h1[created] {
+		font-size: 0.75rem;
+	}
+
 	nav > h1 {
 		border-bottom: 0.25rem solid var(--color-orange);
 	}
@@ -109,6 +141,12 @@
 	li {
 		position: relative;
 		height: 100%;
+	}
+
+	li[url]::before {
+		content: '↪ ';
+		color: var(--color-orange);
+		font-weight: 700;
 	}
 
 	a {

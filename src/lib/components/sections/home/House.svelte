@@ -25,7 +25,7 @@
 		text-align: left;
 		margin: 0;
 		padding: 0;
-		line-height: 1;
+		line-height: 1.2;
 	}
 
 	h1 {
