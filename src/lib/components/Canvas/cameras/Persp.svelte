@@ -4,8 +4,8 @@
 
 	const persp = {
 		makeDefault: true,
-		position: [30, 30, 30],
-		fov: 55
+		position: [1, 1, 3],
+		fov: 40
 		// near: 0.1,
 		// far: 100000
 	};
