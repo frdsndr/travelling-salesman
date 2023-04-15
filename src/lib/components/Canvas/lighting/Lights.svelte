@@ -11,9 +11,9 @@
 		bottom={-10}
 		near={1}
 		far={1000}
-		zoom={200}
+		zoom={300}
 	/>
-	<T.Vector2 attach="shadow.mapSize" args={[2048, 2048]} />
+	<T.Vector2 attach="shadow.mapSize" args={[1024, 1024]} />
 </T.DirectionalLight>
 
 <T.DirectionalLight
